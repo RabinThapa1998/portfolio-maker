@@ -7,10 +7,10 @@ const ResponsiveGridLayout = WidthProvider(Responsive);
 function App() {
   const layouts = {
     lg: [
-      { i: "a", x: 0, y: 0, w: 1, h: 2 },
-      { i: "b", x: 1, y: 0, w: 3, h: 2 },
-      { i: "c", x: 4, y: 0, w: 1, h: 2 },
-      { i: "d", x: 0, y: 2, w: 2, h: 2 },
+      { i: "a", x: 0, y: 0, w: 2, h: 4 },
+      { i: "b", x: 1, y: 0, w: 2, h: 4 },
+      { i: "c", x: 4, y: 0, w: 2, h: 4 },
+      { i: "d", x: 0, y: 2, w: 2, h: 4 },
     ],
   };
   return (
@@ -44,7 +44,21 @@ function Widget({
   backgroundColor: string;
 }) {
   return (
-    <div style={{ width: "100%", height: "100%", backgroundColor }}>{id}</div>
+    <div className="card w-96 bg-base-100 shadow-xl">
+      <figure>
+        <img
+          src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+          alt="Shoes"
+        />
+      </figure>
+      <div className="card-body">
+        <h2 className="card-title">Shoes!</h2>
+        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <div className="card-actions justify-end">
+          <button className="btn btn-primary">Buy Now</button>
+        </div>
+      </div>
+    </div>
   );
 }
 export default App;
