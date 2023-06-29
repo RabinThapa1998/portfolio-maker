@@ -857,6 +857,13 @@ react-resizable@^3.0.4:
     prop-types "15.x"
     react-draggable "^4.0.3"
 
+react-searchable-selectfield@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/react-searchable-selectfield/-/react-searchable-selectfield-1.1.5.tgz#1cfcef50dc5d64e79c3e78981a95e45d0194ed80"
+  integrity sha512-sAyPrK+ezmyPI8ZHdNhXTVfxnQoPrp2GVUid9NXuFd0GvFgy0b73eHMX6SOUB7g20/i4yxV+/OXkGsIW03/TVw==
+  dependencies:
+    react "^18.2.0"
+
 react@^18.2.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
